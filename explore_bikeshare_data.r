@@ -39,6 +39,3 @@ ggplot(has_year, aes(x = Birth.Year, y = Trip.Duration / 60)) +
     scale_y_continuous(breaks = seq(0,60,5)) +
     ggtitle('Trips by birth year and duration') +
     labs(x = "Birth Year", y = "Trip Durations [minutes]")
-
-
-system('python -m nbconvert Explore_bikeshare_data.ipynb')
