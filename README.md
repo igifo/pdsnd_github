@@ -17,5 +17,5 @@ The project uses R data visualizations to answer three questions about bikeshare
 * washington.csv (data)
 
 ### Credits
-[DataCamp Course: Intermediate Data Visualization with ggplot2](https://learn.datacamp.com/courses/data-visualization-with-ggplot2-2)
-[Udacity Nanodegree: Data Analysis with R](https://www.udacity.com/course/data-analysis-with-r--ud651)
+* [DataCamp Course: Intermediate Data Visualization with ggplot2](https://learn.datacamp.com/courses/data-visualization-with-ggplot2-2)
+* [Udacity Nanodegree: Data Analysis with R](https://www.udacity.com/course/data-analysis-with-r--ud651)
