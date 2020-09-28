@@ -3,23 +3,16 @@ ny = read.csv('new_york_city.csv')
 wash = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
 
-head(ny)
-
-head(wash)
-
-head(chi)
 
 library(ggplot2)
 
 # Create and measure relevant subset
 has_gender = subset(ny, Gender != "")
-length(has_gender$Gender) / length(ny$Gender)
-
 
 # Plot
 ggplot(has_gender, aes(x = Gender, y = Trip.Duration / 60)) +
     geom_boxplot() +
-    scale_y_continuous(breaks = seq(0, 60, 5)) + 
+    scale_y_continuous(breaks = seq(0, 60, 5)) +
     coord_cartesian(ylim = c(0,45)) + # zoom in to visualize the relevant range
     ggtitle('New York Trip Durations by Gender') +
     labs(x = "Gender", y = "Trip Durations [minutes]")
@@ -39,7 +32,7 @@ ggplot(chi, aes(x = hour_day)) +
 
 
 has_year = subset(ny, !is.na(Birth.Year))
-ggplot(has_year, aes(x = Birth.Year, y = Trip.Duration / 60)) + 
+ggplot(has_year, aes(x = Birth.Year, y = Trip.Duration / 60)) +
     geom_jitter(alpha = 1/25) +
     coord_cartesian(xlim = c(1938,2000), ylim = c(0,60)) + # zoom in to relevant part
     scale_x_continuous(breaks = seq(1940,2000,5)) +
