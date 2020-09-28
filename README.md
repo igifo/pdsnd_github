@@ -11,7 +11,11 @@ The project uses R data visualizations to answer three questions about bikeshare
 3. Are New York trip numbers and durations different across user age groups?
 
 ### Files used
-Include the files used
+* explore_bikeshare_data.r (code)
+* new_york_city.csv (data)
+* chicago.csv (data)
+* washington.csv (data)
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+[DataCamp Course: Intermediate Data Visualization with ggplot2](https://learn.datacamp.com/courses/data-visualization-with-ggplot2-2)
+[Udacity Nanodegree: Data Analysis with R](https://www.udacity.com/course/data-analysis-with-r--ud651)
