@@ -10,6 +10,16 @@ The project uses R data visualizations to answer three questions about bikeshare
 2. How is bike usage distributed across hour of day in Chicago? Are there busy / quiet times?
 3. Are New York trip numbers and durations different across user age groups?
 
+### Analysis Results
+1. Around 90% of rows (subscribers) have a gender value. Only those rows were taken into account. Typical female subscribers' trips are about 1.5 minutes longer than male users' trips (median). Among the top quartile of users, female users' trips are even 2.5 minutes longer. Female users have more trips with very high durations: around 7.5% of female trips are 30 minutes or longer, versus 5% for men.
+
+
+2. There are two distinct peaks in bikeshare usage that match the hours of day normally referred to as "rush hours". One from 7-9am and one from 4-6pm. In sum, they make up for more than 35% of all Chicago trips. This indicates that bikes are used heavily for commuting - more so in the afternoon (~21% of trips) than in the morning (~15% of trips).
+
+
+3. As one might have expected, younger people tend to do more and longer trips, with users born between 1980 and 1995 doing most trips across all durations. There are pratically no trips for users born after 2000, which could indicate a minimum age restriction. Only very few users are born before 1950.
+
+
 ### Files used
 * explore_bikeshare_data.r (code)
 * new_york_city.csv (data)
